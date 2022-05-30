@@ -1,18 +1,38 @@
 {
-    "version": "0.1.0",
+    "version": "2.0.0",
     "command": "cargo",
-    "showOutput": "always",
     "tasks" :[
         {
-            "taskName": "build",
-            "isBuildCommand": true
+            "label": "build",
+            "command": "cargo",
+            "args": [
+                "build"
+            ],
+            "problemMatcher": [],
+            "group": {
+                "_id": "build",
+                "isDefault": false
+            }
         },
         {
-            "taskName": "run"
+            "label": "run",
+            "command": "cargo",
+            "args": [
+                "run"
+            ],
+            "problemMatcher": []
         },
         {
-            "taskName": "test",
-            "isTestCommand": true
+            "label": "test",
+            "command": "cargo",
+            "args": [
+                "test"
+            ],
+            "problemMatcher": [],
+            "group": {
+                "_id": "test",
+                "isDefault": false
+            }
         }
     ]
 }
